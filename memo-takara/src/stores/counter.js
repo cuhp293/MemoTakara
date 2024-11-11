@@ -1,12 +1,29 @@
-import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
-  }
+export const useAuthStore = defineStore('auth', {
+  state: () => ({
+    user: null,
+    isLoggedIn: false,
+  }),
 
-  return { count, doubleCount, increment }
+  actions: {
+    async register(userData) {
+      // Xử lý đăng ký
+      try {
+        // Gọi API đăng ký
+        // Cập nhật state
+        this.user = userData
+        this.isLoggedIn = true
+        return true
+      } catch (error) {
+        console.error('Register error:', error)
+        return false
+      }
+    },
+
+    logout() {
+      this.user = null
+      this.isLoggedIn = false
+    },
+  },
 })
