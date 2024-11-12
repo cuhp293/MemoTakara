@@ -1,10 +1,10 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <div>Login Page</div>
 </template>
 
-<style>
+<script setup></script>
+
+<style scoped>
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

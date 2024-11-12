@@ -1,5 +1,5 @@
 <template>
-  <div>Register Page</div>
+  <div>header</div>
 </template>
 
 <script setup></script>

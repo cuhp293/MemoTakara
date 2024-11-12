@@ -28,8 +28,10 @@ a,
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    min-height: max-content;
+    place-items: center;
     padding: 0 2rem;
   }
 }
