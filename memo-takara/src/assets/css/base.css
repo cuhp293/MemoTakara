@@ -19,11 +19,15 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --vt-c-text-hide: rgba(95, 95, 95, 0.756);
 
   --body-font: Arial, sans-serif;
   --header-weight-size: 600;
   --color-light-button: #1890ff;
   --color-light-button-hover: #40a9ff;
+  --color-background-light: #f1f2ff;
+
+  --font-size-text-header1: 24px;
 }
 
 /* semantic color variables for this project */
@@ -37,6 +41,7 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
+  --color-text-hide: var(--vt-c-text-hide);
 
   --section-gap: 160px;
 }
@@ -66,6 +71,7 @@
 
     --color-heading: var(--vt-c-text-light-1);
     --color-text: var(--vt-c-text-light-2);
+    --color-text-hide: var(--vt-c-text-hide);
   }
 }
 
